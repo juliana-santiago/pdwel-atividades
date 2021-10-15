@@ -4,9 +4,9 @@
 <html>
     <body>
         <?php
-			$array = array(1, 5, 7, 11, 2, 3);    
+			$array = array(1, 5, 7, 12, 2, 3, 24, 16, 4, 11);  
             $_primos = array();
-            function Primo($_n)
+            function ehPrimo($_n)
 			{
             	$primo = True;
                 $i = $_n - 1;
@@ -24,16 +24,17 @@
             }
             
             foreach ($array as &$value) {
-			    if (Primo($value) == 1){
+			    if (ehPrimo($value) == 1){
                 	array_push($_primos, $value);
                 }
 			}
             
-            echo "Array de primos: <br>";
+            echo "Array de primos: [";
             while($_i <= count($_primos)){
-            	echo "$_primos[$_i] <br>";
+            	echo "$_primos[$_i] ";
                 $_i++;
-            }      
+            }   
+            echo "]";
         ?>
 </body>
 </html>

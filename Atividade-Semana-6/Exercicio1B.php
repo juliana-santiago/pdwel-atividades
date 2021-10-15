@@ -5,7 +5,7 @@
     <body>
         <?php
             
-            function valorEhPrimo($_n)
+            function ehPrimo($_n)
 			{
             	$primo = True;
                 $i = $_n - 1;
@@ -23,15 +23,16 @@
                 }
                 
                 if ($primo == 1){
-                	echo "O valor $_n informado é primo <br>";
+                	echo "O número $_n informado é primo. <br>";
                 }
                 else{
-                	echo "O valor $_n informado não é primo <br>";
+                	echo "O número $_n informado não é primo. <br>";
                 }
             }
             
-            valorEhPrimo(6);
-            valorEhPrimo(7);
+            ehPrimo(6);
+            ehPrimo(7);
+            ehPrimo(47);
         ?>
 </body>
 </html>

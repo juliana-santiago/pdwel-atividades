@@ -4,7 +4,7 @@
 <html>
     <body>
         <?php
-			$_array = array(1, 2, 3, 4);
+			$_array = array(1, 6, 2, 4, 0);
             $_array_fatoriais = array();
             $_i = 0;
 
@@ -22,11 +22,12 @@
                 array_push($_array_fatoriais, calcFatorial($value));
 			}
 
-            echo "Array com os fatoriais: <br>";
+            echo "Array com os fatoriais: [ ";
             while($_i < count($_array_fatoriais)){
-            	echo "$_array_fatoriais[$_i] <br>";
+            	echo "$_array_fatoriais[$_i] ";
                 $_i++;
             }
+            echo "]";
         ?>
 </body>
 </html>

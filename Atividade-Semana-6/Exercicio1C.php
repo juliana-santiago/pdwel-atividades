@@ -4,7 +4,7 @@
 <html>
     <body>
         <?php
-			function numPerfeito ($_n)
+			function ehPerfeito ($_n)
 			{
 				$_i = $_n - 1;
           		$_soma = 0;
@@ -17,15 +17,16 @@
                 }
                 
                 if ($_n == $_soma){
-                	echo "O valor $_n informado é perfeito <br>";
+                	echo "O número $_n informado é perfeito. <br>";
                 }
                 else{
-                	echo "O valor $_n informado não é perfeito <br>";
+                	echo "O número $_n informado não é perfeito. <br>";
                 }  	
             }	
 
-            numPerfeito(5);
-            numPerfeito(6);
+            ehPerfeito(5);
+            ehPerfeito(6);
+            ehPerfeito(4);
         ?>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <html>
     <body>
         <?php
-			$_array = array(1, 2, 3, 4, 5, 6, 28, 496);    
+			$_array = array(1, 2, 28, 5, 6, 496, 16, 32);    
             $_perfeitos = array();
 			function ehPerfeito ($_numero)
 			{
@@ -29,11 +29,12 @@
                 }
 			}
             $_i = 0;
-            echo "Array de números perfeitos: <br><br>";
+            echo "Array de números perfeitos: [ ";
             while($_i <= count($_perfeitos)){
-            	echo "$_perfeitos[$_i] <br>";
+            	echo "$_perfeitos[$_i] ";
                 $_i++;
             }
+            echo "]"
         ?>
 </body>
 </html>

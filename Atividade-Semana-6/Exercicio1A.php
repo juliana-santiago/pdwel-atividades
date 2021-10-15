@@ -14,11 +14,12 @@
             		$_fatorial = $_fatorial * $_n--;
           		}
           	
-                echo "O fatorial de $_numInicial é $_fatorial <br>";
+                echo "O fatorial do número $_numInicial é $_fatorial. <br>";
             }
             
             calcFatorial(7);	
             calcFatorial(4);
+            calcFatorial(0);
         ?>
 </body>
 </html>
